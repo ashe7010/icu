@@ -4,51 +4,61 @@
     <meta charset="UTF-8">
     <title>111</title>
     <style type="text/css">
-     p.d{
-         position: relative;
+
+
         }
-     p.d::before{
-         height: 0;
-         width: 0;
-         content: "";
-         border: 15.5px solid transparent;
-         border-right-color: #212121;
-         position: absolute;
-         left: -30px;
-         transition: all 0.5s;
-         opacity: 0;
-     }
-        p.d::after{
-            content: attr(title);
-            color: deeppink;
-            background-color: black;
-            opacity: 0;
-            left: 0px;
-            position: absolute;
-            transition: all 0.5s;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px ;
+
+        .c {
+            display: flex;
+            background-color:aqua;
+            height: 50px;
+            margin: auto 40px;
+            border-radius: 15pt;
         }
-        p.d:hover::before{
-            transition: all 0.5s;
-            position: absolute;
-            opacity: 1;
-            left: 51px;
+
+        .c .a {
+            margin: auto 20px;
+            list-style: none;
         }
-        p.d:hover::after{
-            transition: all 0.5s;
-            word-break: keep-all;
-            opacity: 1;
-            position: absolute;
-            left: 82px;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px ;
+
+        .c .a .b {
+            text-decoration: none;
+            padding: 13px;
+
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: inline-block;
+            width: 5em;
+
+            color: #212121;
+            transition: all 500ms;
+        }
+
+        .c .a :hover {
+            background-color: darkturquoise;
+            color: whitesmoke;
         }
     </style>
 </head>
     <body>
-   <h2>
-        <p class="d" title="意大利语你好" >Ciao</p>
-   </h2>
+    <div>
+    <ul class="c" >
+        <li class="a">
+            <a class="b" href="#">首页</a>
+            
+        </li>
+        <li class="a">
+            <a class="b" href="#">周边游</a>
+        </li>
+        <li class="a">
+            <a class="b" href="#">出境游</a>
+        </li>
+        <li class="a">
+            <a class="b" href="#">独家栏目</a>
+        </li>
+    </ul>
+    </div>
     </body>
 </html>
